@@ -1,0 +1,777 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		200A72D570A2FB7A253202FF /* libPods-MapRemark.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BD095AB50CB5D873716F8CB9 /* libPods-MapRemark.a */; };
+		45B7311B4D3056A83DCE9879 /* libPods-MapRemarkTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EFD61BEA7A5550E1BB07D5F4 /* libPods-MapRemarkTests.a */; };
+		D306F8FEC449C044AA66B172 /* libPods-MapRemarkUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D2E7E29048C95A45EC3D6C10 /* libPods-MapRemarkUITests.a */; };
+		E8BEAF431F1CA072008CC8D3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E8BEAF421F1CA072008CC8D3 /* main.m */; };
+		E8BEAF461F1CA072008CC8D3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E8BEAF451F1CA072008CC8D3 /* AppDelegate.m */; };
+		E8BEAF491F1CA072008CC8D3 /* MRAuthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E8BEAF481F1CA072008CC8D3 /* MRAuthViewController.m */; };
+		E8BEAF4C1F1CA072008CC8D3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8BEAF4A1F1CA072008CC8D3 /* Main.storyboard */; };
+		E8BEAF4E1F1CA072008CC8D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8BEAF4D1F1CA072008CC8D3 /* Assets.xcassets */; };
+		E8BEAF511F1CA072008CC8D3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8BEAF4F1F1CA072008CC8D3 /* LaunchScreen.storyboard */; };
+		E8BEAF5C1F1CA072008CC8D3 /* MapRemarkTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E8BEAF5B1F1CA072008CC8D3 /* MapRemarkTests.m */; };
+		E8BEAF671F1CA072008CC8D3 /* MapRemarkUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E8BEAF661F1CA072008CC8D3 /* MapRemarkUITests.m */; };
+		E8BEAF761F1CA0FC008CC8D3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E8BEAF751F1CA0FC008CC8D3 /* GoogleService-Info.plist */; };
+		E8BEAF7A1F1D893D008CC8D3 /* UIAlertController+MRAlerts.m in Sources */ = {isa = PBXBuildFile; fileRef = E8BEAF791F1D893D008CC8D3 /* UIAlertController+MRAlerts.m */; };
+		E8BEAF7E1F1DB91E008CC8D3 /* MRMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E8BEAF7D1F1DB91E008CC8D3 /* MRMapViewController.m */; };
+		E8BEAF801F1DBB19008CC8D3 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8BEAF7F1F1DBB19008CC8D3 /* MapKit.framework */; };
+		E8BEAF821F1DDB99008CC8D3 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8BEAF811F1DDB99008CC8D3 /* CoreLocation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E8BEAF581F1CA072008CC8D3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E8BEAF361F1CA072008CC8D3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E8BEAF3D1F1CA072008CC8D3;
+			remoteInfo = MapRemark;
+		};
+		E8BEAF631F1CA072008CC8D3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E8BEAF361F1CA072008CC8D3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E8BEAF3D1F1CA072008CC8D3;
+			remoteInfo = MapRemark;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1C0423599F6CB48BB6BD7218 /* Pods-MapRemarkUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MapRemarkUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MapRemarkUITests/Pods-MapRemarkUITests.release.xcconfig"; sourceTree = "<group>"; };
+		351946CFDAC5421BC95CE58B /* Pods-MapRemark.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MapRemark.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MapRemark/Pods-MapRemark.debug.xcconfig"; sourceTree = "<group>"; };
+		3E143F96F34CF716A1ED0500 /* Pods-MapRemarkTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MapRemarkTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MapRemarkTests/Pods-MapRemarkTests.release.xcconfig"; sourceTree = "<group>"; };
+		68A9316A632A9660837CC3C3 /* Pods-MapRemarkTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MapRemarkTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MapRemarkTests/Pods-MapRemarkTests.debug.xcconfig"; sourceTree = "<group>"; };
+		BD095AB50CB5D873716F8CB9 /* libPods-MapRemark.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MapRemark.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C7F2FDAD773509872A63AE4C /* Pods-MapRemark.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MapRemark.release.xcconfig"; path = "Pods/Target Support Files/Pods-MapRemark/Pods-MapRemark.release.xcconfig"; sourceTree = "<group>"; };
+		D2E7E29048C95A45EC3D6C10 /* libPods-MapRemarkUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MapRemarkUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2BEF272489057C6DC32D8C0 /* Pods-MapRemarkUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MapRemarkUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MapRemarkUITests/Pods-MapRemarkUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		E8BEAF3E1F1CA072008CC8D3 /* MapRemark.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MapRemark.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E8BEAF421F1CA072008CC8D3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E8BEAF441F1CA072008CC8D3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E8BEAF451F1CA072008CC8D3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E8BEAF471F1CA072008CC8D3 /* MRAuthViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MRAuthViewController.h; sourceTree = "<group>"; };
+		E8BEAF481F1CA072008CC8D3 /* MRAuthViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MRAuthViewController.m; sourceTree = "<group>"; };
+		E8BEAF4B1F1CA072008CC8D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E8BEAF4D1F1CA072008CC8D3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E8BEAF501F1CA072008CC8D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E8BEAF521F1CA072008CC8D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E8BEAF571F1CA072008CC8D3 /* MapRemarkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MapRemarkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E8BEAF5B1F1CA072008CC8D3 /* MapRemarkTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MapRemarkTests.m; sourceTree = "<group>"; };
+		E8BEAF5D1F1CA072008CC8D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E8BEAF621F1CA072008CC8D3 /* MapRemarkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MapRemarkUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E8BEAF661F1CA072008CC8D3 /* MapRemarkUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MapRemarkUITests.m; sourceTree = "<group>"; };
+		E8BEAF681F1CA072008CC8D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E8BEAF751F1CA0FC008CC8D3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E8BEAF781F1D893D008CC8D3 /* UIAlertController+MRAlerts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertController+MRAlerts.h"; sourceTree = "<group>"; };
+		E8BEAF791F1D893D008CC8D3 /* UIAlertController+MRAlerts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertController+MRAlerts.m"; sourceTree = "<group>"; };
+		E8BEAF7B1F1D9DE2008CC8D3 /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		E8BEAF7C1F1DB91E008CC8D3 /* MRMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRMapViewController.h; sourceTree = "<group>"; };
+		E8BEAF7D1F1DB91E008CC8D3 /* MRMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRMapViewController.m; sourceTree = "<group>"; };
+		E8BEAF7F1F1DBB19008CC8D3 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		E8BEAF811F1DDB99008CC8D3 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		EFD61BEA7A5550E1BB07D5F4 /* libPods-MapRemarkTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MapRemarkTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E8BEAF3B1F1CA072008CC8D3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8BEAF821F1DDB99008CC8D3 /* CoreLocation.framework in Frameworks */,
+				E8BEAF801F1DBB19008CC8D3 /* MapKit.framework in Frameworks */,
+				200A72D570A2FB7A253202FF /* libPods-MapRemark.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8BEAF541F1CA072008CC8D3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45B7311B4D3056A83DCE9879 /* libPods-MapRemarkTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8BEAF5F1F1CA072008CC8D3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D306F8FEC449C044AA66B172 /* libPods-MapRemarkUITests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8D117DD1F93BE8E5AB522D7E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E8BEAF811F1DDB99008CC8D3 /* CoreLocation.framework */,
+				E8BEAF7F1F1DBB19008CC8D3 /* MapKit.framework */,
+				BD095AB50CB5D873716F8CB9 /* libPods-MapRemark.a */,
+				EFD61BEA7A5550E1BB07D5F4 /* libPods-MapRemarkTests.a */,
+				D2E7E29048C95A45EC3D6C10 /* libPods-MapRemarkUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8FBC70CA4212E588ACBA2D7D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				351946CFDAC5421BC95CE58B /* Pods-MapRemark.debug.xcconfig */,
+				C7F2FDAD773509872A63AE4C /* Pods-MapRemark.release.xcconfig */,
+				68A9316A632A9660837CC3C3 /* Pods-MapRemarkTests.debug.xcconfig */,
+				3E143F96F34CF716A1ED0500 /* Pods-MapRemarkTests.release.xcconfig */,
+				E2BEF272489057C6DC32D8C0 /* Pods-MapRemarkUITests.debug.xcconfig */,
+				1C0423599F6CB48BB6BD7218 /* Pods-MapRemarkUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E8BEAF351F1CA072008CC8D3 = {
+			isa = PBXGroup;
+			children = (
+				E8BEAF401F1CA072008CC8D3 /* MapRemark */,
+				E8BEAF411F1CA072008CC8D3 /* Supporting Files */,
+				E8BEAF5A1F1CA072008CC8D3 /* MapRemarkTests */,
+				E8BEAF651F1CA072008CC8D3 /* MapRemarkUITests */,
+				E8BEAF3F1F1CA072008CC8D3 /* Products */,
+				8FBC70CA4212E588ACBA2D7D /* Pods */,
+				8D117DD1F93BE8E5AB522D7E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E8BEAF3F1F1CA072008CC8D3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E8BEAF3E1F1CA072008CC8D3 /* MapRemark.app */,
+				E8BEAF571F1CA072008CC8D3 /* MapRemarkTests.xctest */,
+				E8BEAF621F1CA072008CC8D3 /* MapRemarkUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E8BEAF401F1CA072008CC8D3 /* MapRemark */ = {
+			isa = PBXGroup;
+			children = (
+				E8BEAF4A1F1CA072008CC8D3 /* Main.storyboard */,
+				E8BEAF771F1D8900008CC8D3 /* Categories */,
+				E8BEAF471F1CA072008CC8D3 /* MRAuthViewController.h */,
+				E8BEAF481F1CA072008CC8D3 /* MRAuthViewController.m */,
+				E8BEAF7C1F1DB91E008CC8D3 /* MRMapViewController.h */,
+				E8BEAF7D1F1DB91E008CC8D3 /* MRMapViewController.m */,
+			);
+			path = MapRemark;
+			sourceTree = "<group>";
+		};
+		E8BEAF411F1CA072008CC8D3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E8BEAF741F1CA0F0008CC8D3 /* Firebase */,
+				E8BEAF7B1F1D9DE2008CC8D3 /* Constants.h */,
+				E8BEAF441F1CA072008CC8D3 /* AppDelegate.h */,
+				E8BEAF451F1CA072008CC8D3 /* AppDelegate.m */,
+				E8BEAF4D1F1CA072008CC8D3 /* Assets.xcassets */,
+				E8BEAF4F1F1CA072008CC8D3 /* LaunchScreen.storyboard */,
+				E8BEAF521F1CA072008CC8D3 /* Info.plist */,
+				E8BEAF421F1CA072008CC8D3 /* main.m */,
+			);
+			name = "Supporting Files";
+			path = MapRemark;
+			sourceTree = "<group>";
+		};
+		E8BEAF5A1F1CA072008CC8D3 /* MapRemarkTests */ = {
+			isa = PBXGroup;
+			children = (
+				E8BEAF5B1F1CA072008CC8D3 /* MapRemarkTests.m */,
+				E8BEAF5D1F1CA072008CC8D3 /* Info.plist */,
+			);
+			path = MapRemarkTests;
+			sourceTree = "<group>";
+		};
+		E8BEAF651F1CA072008CC8D3 /* MapRemarkUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E8BEAF661F1CA072008CC8D3 /* MapRemarkUITests.m */,
+				E8BEAF681F1CA072008CC8D3 /* Info.plist */,
+			);
+			path = MapRemarkUITests;
+			sourceTree = "<group>";
+		};
+		E8BEAF741F1CA0F0008CC8D3 /* Firebase */ = {
+			isa = PBXGroup;
+			children = (
+				E8BEAF751F1CA0FC008CC8D3 /* GoogleService-Info.plist */,
+			);
+			name = Firebase;
+			sourceTree = "<group>";
+		};
+		E8BEAF771F1D8900008CC8D3 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				E8BEAF781F1D893D008CC8D3 /* UIAlertController+MRAlerts.h */,
+				E8BEAF791F1D893D008CC8D3 /* UIAlertController+MRAlerts.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E8BEAF3D1F1CA072008CC8D3 /* MapRemark */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E8BEAF6B1F1CA072008CC8D3 /* Build configuration list for PBXNativeTarget "MapRemark" */;
+			buildPhases = (
+				9A75AA7E6252DD469DF0071C /* [CP] Check Pods Manifest.lock */,
+				E8BEAF3A1F1CA072008CC8D3 /* Sources */,
+				E8BEAF3B1F1CA072008CC8D3 /* Frameworks */,
+				E8BEAF3C1F1CA072008CC8D3 /* Resources */,
+				BAFC5B38ECEF98CEE18320EA /* [CP] Embed Pods Frameworks */,
+				FB7B8357EA3ACC1737A13D85 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MapRemark;
+			productName = MapRemark;
+			productReference = E8BEAF3E1F1CA072008CC8D3 /* MapRemark.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E8BEAF561F1CA072008CC8D3 /* MapRemarkTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E8BEAF6E1F1CA072008CC8D3 /* Build configuration list for PBXNativeTarget "MapRemarkTests" */;
+			buildPhases = (
+				DA8BE122E4ED279A0A7CB738 /* [CP] Check Pods Manifest.lock */,
+				E8BEAF531F1CA072008CC8D3 /* Sources */,
+				E8BEAF541F1CA072008CC8D3 /* Frameworks */,
+				E8BEAF551F1CA072008CC8D3 /* Resources */,
+				1727FF26B3C90C4CE7FA6734 /* [CP] Embed Pods Frameworks */,
+				DCFF746663C62CD2E7C497BD /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E8BEAF591F1CA072008CC8D3 /* PBXTargetDependency */,
+			);
+			name = MapRemarkTests;
+			productName = MapRemarkTests;
+			productReference = E8BEAF571F1CA072008CC8D3 /* MapRemarkTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E8BEAF611F1CA072008CC8D3 /* MapRemarkUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E8BEAF711F1CA072008CC8D3 /* Build configuration list for PBXNativeTarget "MapRemarkUITests" */;
+			buildPhases = (
+				AFF5DAABA584FB74DAA1F712 /* [CP] Check Pods Manifest.lock */,
+				E8BEAF5E1F1CA072008CC8D3 /* Sources */,
+				E8BEAF5F1F1CA072008CC8D3 /* Frameworks */,
+				E8BEAF601F1CA072008CC8D3 /* Resources */,
+				DBFBFCDA3C51FCEC682CDA87 /* [CP] Embed Pods Frameworks */,
+				275EF3CC98F23C2404BC8752 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E8BEAF641F1CA072008CC8D3 /* PBXTargetDependency */,
+			);
+			name = MapRemarkUITests;
+			productName = MapRemarkUITests;
+			productReference = E8BEAF621F1CA072008CC8D3 /* MapRemarkUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E8BEAF361F1CA072008CC8D3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = AnXu;
+				TargetAttributes = {
+					E8BEAF3D1F1CA072008CC8D3 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = LJD4E9EV47;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					E8BEAF561F1CA072008CC8D3 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = E8BEAF3D1F1CA072008CC8D3;
+					};
+					E8BEAF611F1CA072008CC8D3 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = E8BEAF3D1F1CA072008CC8D3;
+					};
+				};
+			};
+			buildConfigurationList = E8BEAF391F1CA072008CC8D3 /* Build configuration list for PBXProject "MapRemark" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E8BEAF351F1CA072008CC8D3;
+			productRefGroup = E8BEAF3F1F1CA072008CC8D3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E8BEAF3D1F1CA072008CC8D3 /* MapRemark */,
+				E8BEAF561F1CA072008CC8D3 /* MapRemarkTests */,
+				E8BEAF611F1CA072008CC8D3 /* MapRemarkUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E8BEAF3C1F1CA072008CC8D3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8BEAF511F1CA072008CC8D3 /* LaunchScreen.storyboard in Resources */,
+				E8BEAF761F1CA0FC008CC8D3 /* GoogleService-Info.plist in Resources */,
+				E8BEAF4E1F1CA072008CC8D3 /* Assets.xcassets in Resources */,
+				E8BEAF4C1F1CA072008CC8D3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8BEAF551F1CA072008CC8D3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8BEAF601F1CA072008CC8D3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1727FF26B3C90C4CE7FA6734 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MapRemarkTests/Pods-MapRemarkTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		275EF3CC98F23C2404BC8752 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MapRemarkUITests/Pods-MapRemarkUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9A75AA7E6252DD469DF0071C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		AFF5DAABA584FB74DAA1F712 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		BAFC5B38ECEF98CEE18320EA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MapRemark/Pods-MapRemark-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DA8BE122E4ED279A0A7CB738 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		DBFBFCDA3C51FCEC682CDA87 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MapRemarkUITests/Pods-MapRemarkUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DCFF746663C62CD2E7C497BD /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MapRemarkTests/Pods-MapRemarkTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FB7B8357EA3ACC1737A13D85 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MapRemark/Pods-MapRemark-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E8BEAF3A1F1CA072008CC8D3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8BEAF491F1CA072008CC8D3 /* MRAuthViewController.m in Sources */,
+				E8BEAF7E1F1DB91E008CC8D3 /* MRMapViewController.m in Sources */,
+				E8BEAF461F1CA072008CC8D3 /* AppDelegate.m in Sources */,
+				E8BEAF7A1F1D893D008CC8D3 /* UIAlertController+MRAlerts.m in Sources */,
+				E8BEAF431F1CA072008CC8D3 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8BEAF531F1CA072008CC8D3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8BEAF5C1F1CA072008CC8D3 /* MapRemarkTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8BEAF5E1F1CA072008CC8D3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8BEAF671F1CA072008CC8D3 /* MapRemarkUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E8BEAF591F1CA072008CC8D3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E8BEAF3D1F1CA072008CC8D3 /* MapRemark */;
+			targetProxy = E8BEAF581F1CA072008CC8D3 /* PBXContainerItemProxy */;
+		};
+		E8BEAF641F1CA072008CC8D3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E8BEAF3D1F1CA072008CC8D3 /* MapRemark */;
+			targetProxy = E8BEAF631F1CA072008CC8D3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E8BEAF4A1F1CA072008CC8D3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E8BEAF4B1F1CA072008CC8D3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E8BEAF4F1F1CA072008CC8D3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E8BEAF501F1CA072008CC8D3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E8BEAF691F1CA072008CC8D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		E8BEAF6A1F1CA072008CC8D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E8BEAF6C1F1CA072008CC8D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 351946CFDAC5421BC95CE58B /* Pods-MapRemark.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = LJD4E9EV47;
+				INFOPLIST_FILE = MapRemark/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ANXU.MapRemark;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		E8BEAF6D1F1CA072008CC8D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C7F2FDAD773509872A63AE4C /* Pods-MapRemark.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = LJD4E9EV47;
+				INFOPLIST_FILE = MapRemark/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ANXU.MapRemark;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		E8BEAF6F1F1CA072008CC8D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 68A9316A632A9660837CC3C3 /* Pods-MapRemarkTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = MapRemarkTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ANXU.MapRemarkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MapRemark.app/MapRemark";
+			};
+			name = Debug;
+		};
+		E8BEAF701F1CA072008CC8D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3E143F96F34CF716A1ED0500 /* Pods-MapRemarkTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = MapRemarkTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ANXU.MapRemarkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MapRemark.app/MapRemark";
+			};
+			name = Release;
+		};
+		E8BEAF721F1CA072008CC8D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E2BEF272489057C6DC32D8C0 /* Pods-MapRemarkUITests.debug.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = MapRemarkUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ANXU.MapRemarkUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = MapRemark;
+			};
+			name = Debug;
+		};
+		E8BEAF731F1CA072008CC8D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1C0423599F6CB48BB6BD7218 /* Pods-MapRemarkUITests.release.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = MapRemarkUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ANXU.MapRemarkUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = MapRemark;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E8BEAF391F1CA072008CC8D3 /* Build configuration list for PBXProject "MapRemark" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E8BEAF691F1CA072008CC8D3 /* Debug */,
+				E8BEAF6A1F1CA072008CC8D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E8BEAF6B1F1CA072008CC8D3 /* Build configuration list for PBXNativeTarget "MapRemark" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E8BEAF6C1F1CA072008CC8D3 /* Debug */,
+				E8BEAF6D1F1CA072008CC8D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E8BEAF6E1F1CA072008CC8D3 /* Build configuration list for PBXNativeTarget "MapRemarkTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E8BEAF6F1F1CA072008CC8D3 /* Debug */,
+				E8BEAF701F1CA072008CC8D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E8BEAF711F1CA072008CC8D3 /* Build configuration list for PBXNativeTarget "MapRemarkUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E8BEAF721F1CA072008CC8D3 /* Debug */,
+				E8BEAF731F1CA072008CC8D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E8BEAF361F1CA072008CC8D3 /* Project object */;
+}
