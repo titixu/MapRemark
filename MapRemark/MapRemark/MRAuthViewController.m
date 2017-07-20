@@ -8,56 +8,34 @@
 
 #import "MRAuthViewController.h"
 #import "UIAlertController+MRAlerts.h"
+#import "NSString+MRStringValidation.h"
 #import "Constants.h"
 
 @import FirebaseAuth;
 
 @interface MRAuthViewController () <UITextFieldDelegate>
 
-@property (nonatomic, assign) FIRAuthStateDidChangeListenerHandle authStateDidChangeHandler;
-
 @property (weak, nonatomic) IBOutlet UITextField *emailTextField;
 @property (weak, nonatomic) IBOutlet UITextField *passwordTextField;
 @property (weak, nonatomic) IBOutlet UIButton *signUpButton;
 @property (weak, nonatomic) IBOutlet UIButton *loginButton;
-@property (weak, nonatomic) IBOutlet UITextField *userNameTextField;
 
 @end
 
 @implementation MRAuthViewController
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
     
+    //prefill emial and password
+    //TODO: storing password is not secure
     NSString *email = [[NSUserDefaults standardUserDefaults] objectForKey:MRUserEmail];
     self.emailTextField.text = email;
     NSString *password = [[NSUserDefaults standardUserDefaults] objectForKey:MRUserPassword];
     self.passwordTextField.text = password;
 }
 
-- (IBAction)signUpButtonClicked:(UIButton *)sender {
-
-    if ([self validateTextFields]) {
-        
-        [self toggleViewsForProgress:YES];
-        
-        [[FIRAuth auth] createUserWithEmail:self.emailTextField.text password:self.passwordTextField.text completion:^(FIRUser * _Nullable user, NSError * _Nullable error) {
-            if (self.userNameTextField.text.length) {
-                FIRUserProfileChangeRequest *changeRequest = [[FIRAuth auth].currentUser profileChangeRequest];
-                changeRequest.displayName = self.userNameTextField.text;
-                [changeRequest commitChangesWithCompletion:^(NSError * _Nullable error) {
-                    if (error) {
-                        NSLog(@"change display name error %@", error);
-                    }
-                    [self userLogedIn:[FIRAuth auth].currentUser error:error];
-                }];
-            } else {
-                [self userLogedIn:user error:error];
-            }
-        }];
-    }
-}
-
+#pragma mark- IBActions
 - (IBAction)loginButtonClicked:(UIButton *)sender {
     if ([self validateTextFields]) {
         [self toggleViewsForProgress:YES];
@@ -67,6 +45,16 @@
     }
 }
 
+#pragma mark- Text Field Delegates
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField {
+    [textField resignFirstResponder];
+    return YES;
+}
+
+#pragma mark- Private methods
+
+//presen alert for error, otherwise navigate to the mapview
 - (void)userLogedIn:(FIRUser *)user error: (NSError *)error {
     NSString *title = @"Welcome";
     NSString *message = user.displayName ?: user.email;
@@ -78,6 +66,7 @@
         message = error.localizedDescription;
     } else {
         [[NSUserDefaults standardUserDefaults] setObject:self.emailTextField.text forKey:MRUserEmail];
+        //TODO: store user passwor is not secure, should store user token instead
         [[NSUserDefaults standardUserDefaults] setObject:self.passwordTextField.text forKey:MRUserPassword];
         [[NSUserDefaults standardUserDefaults] synchronize];
     }
@@ -89,13 +78,23 @@
             });
         }
     }];
-    
-
 }
 
+//validate the text field before send it to the server
 - (BOOL)validateTextFields {
-    if (self.emailTextField.text.length == 0 || self.passwordTextField.text.length == 0) {
-        UIAlertController *alertController = [UIAlertController defaultAlertWithTitle:@"Missing email or password" message:@"Please fill in both email and password"];
+    
+    //email needs to be valid
+    if (![self.emailTextField.text isValidEmail]) {
+        UIAlertController *alertController = [UIAlertController defaultAlertWithTitle:nil message:@"Please, enter a valid email"];
+        [self presentViewController:alertController animated:YES completion:^{
+            [self.emailTextField becomeFirstResponder];
+        }];
+        return NO;
+    }
+
+    
+    if (self.passwordTextField.text.length == 0) {
+        UIAlertController *alertController = [UIAlertController defaultAlertWithTitle:nil message:@"Please fill in password"];
         [self presentViewController:alertController animated:YES completion:^{}];
         return NO;
     } else {
@@ -103,6 +102,7 @@
     }
 }
 
+//when login in progress disable all UIs
 - (void)toggleViewsForProgress:(BOOL)inProgress {
     
     if (inProgress) {
@@ -110,20 +110,10 @@
         [self.passwordTextField resignFirstResponder];
     }
     
-    self.emailTextField.enabled = !inProgress;
-    self.passwordTextField.enabled = !inProgress;
     self.signUpButton.enabled = !inProgress;
     self.loginButton.enabled = !inProgress;
 }
 
-- (BOOL)textFieldShouldReturn:(UITextField *)textField {
-    if (textField == self.emailTextField) {
-        [self.passwordTextField becomeFirstResponder];
-    } else if (textField == self.passwordTextField) {
-        [self signUpButtonClicked:nil];
-    }
-    return YES;
-}
 
 - (void)navigateToMapViewController {
     UIViewController *controller = [self.storyboard instantiateViewControllerWithIdentifier:@"MRMapViewController"];

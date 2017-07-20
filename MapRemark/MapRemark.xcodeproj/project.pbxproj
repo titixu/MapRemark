@@ -23,6 +23,13 @@
 		E8BEAF7E1F1DB91E008CC8D3 /* MRMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E8BEAF7D1F1DB91E008CC8D3 /* MRMapViewController.m */; };
 		E8BEAF801F1DBB19008CC8D3 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8BEAF7F1F1DBB19008CC8D3 /* MapKit.framework */; };
 		E8BEAF821F1DDB99008CC8D3 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8BEAF811F1DDB99008CC8D3 /* CoreLocation.framework */; };
+		E8D221C61F20659000184956 /* MRNoteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E8D221C51F20659000184956 /* MRNoteViewController.m */; };
+		E8D221CC1F20BE1E00184956 /* MRSignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E8D221CB1F20BE1E00184956 /* MRSignUpViewController.m */; };
+		E8D221D01F20C58E00184956 /* NSString+MRStringValidation.m in Sources */ = {isa = PBXBuildFile; fileRef = E8D221CF1F20C58E00184956 /* NSString+MRStringValidation.m */; };
+		E8F9BCA51F1EF0A40082564C /* MRNote.m in Sources */ = {isa = PBXBuildFile; fileRef = E8F9BCA41F1EF0A40082564C /* MRNote.m */; };
+		E8F9BCA91F1EF66A0082564C /* MRNoteFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = E8F9BCA81F1EF66A0082564C /* MRNoteFactory.m */; };
+		E8F9BCAC1F1EFA270082564C /* MRDBInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = E8F9BCAB1F1EFA270082564C /* MRDBInteractor.m */; };
+		E8F9BCAF1F1F53EE0082564C /* MRNoteAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = E8F9BCAE1F1F53EE0082564C /* MRNoteAnnotation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +82,20 @@
 		E8BEAF7D1F1DB91E008CC8D3 /* MRMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRMapViewController.m; sourceTree = "<group>"; };
 		E8BEAF7F1F1DBB19008CC8D3 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		E8BEAF811F1DDB99008CC8D3 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		E8D221C41F20659000184956 /* MRNoteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRNoteViewController.h; sourceTree = "<group>"; };
+		E8D221C51F20659000184956 /* MRNoteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRNoteViewController.m; sourceTree = "<group>"; };
+		E8D221CA1F20BE1E00184956 /* MRSignUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRSignUpViewController.h; sourceTree = "<group>"; };
+		E8D221CB1F20BE1E00184956 /* MRSignUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRSignUpViewController.m; sourceTree = "<group>"; };
+		E8D221CE1F20C58E00184956 /* NSString+MRStringValidation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MRStringValidation.h"; sourceTree = "<group>"; };
+		E8D221CF1F20C58E00184956 /* NSString+MRStringValidation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MRStringValidation.m"; sourceTree = "<group>"; };
+		E8F9BCA31F1EF0A40082564C /* MRNote.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRNote.h; sourceTree = "<group>"; };
+		E8F9BCA41F1EF0A40082564C /* MRNote.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRNote.m; sourceTree = "<group>"; };
+		E8F9BCA71F1EF66A0082564C /* MRNoteFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRNoteFactory.h; sourceTree = "<group>"; };
+		E8F9BCA81F1EF66A0082564C /* MRNoteFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRNoteFactory.m; sourceTree = "<group>"; };
+		E8F9BCAA1F1EFA270082564C /* MRDBInteractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRDBInteractor.h; sourceTree = "<group>"; };
+		E8F9BCAB1F1EFA270082564C /* MRDBInteractor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRDBInteractor.m; sourceTree = "<group>"; };
+		E8F9BCAD1F1F53EE0082564C /* MRNoteAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRNoteAnnotation.h; sourceTree = "<group>"; };
+		E8F9BCAE1F1F53EE0082564C /* MRNoteAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRNoteAnnotation.m; sourceTree = "<group>"; };
 		EFD61BEA7A5550E1BB07D5F4 /* libPods-MapRemarkTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MapRemarkTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -161,10 +182,8 @@
 			children = (
 				E8BEAF4A1F1CA072008CC8D3 /* Main.storyboard */,
 				E8BEAF771F1D8900008CC8D3 /* Categories */,
-				E8BEAF471F1CA072008CC8D3 /* MRAuthViewController.h */,
-				E8BEAF481F1CA072008CC8D3 /* MRAuthViewController.m */,
-				E8BEAF7C1F1DB91E008CC8D3 /* MRMapViewController.h */,
-				E8BEAF7D1F1DB91E008CC8D3 /* MRMapViewController.m */,
+				E8D221CD1F20BE2600184956 /* View Controllers */,
+				E8F9BCA61F1EF0BB0082564C /* Data Model */,
 			);
 			path = MapRemark;
 			sourceTree = "<group>";
@@ -216,8 +235,88 @@
 			children = (
 				E8BEAF781F1D893D008CC8D3 /* UIAlertController+MRAlerts.h */,
 				E8BEAF791F1D893D008CC8D3 /* UIAlertController+MRAlerts.m */,
+				E8D221CE1F20C58E00184956 /* NSString+MRStringValidation.h */,
+				E8D221CF1F20C58E00184956 /* NSString+MRStringValidation.m */,
 			);
 			name = Categories;
+			sourceTree = "<group>";
+		};
+		E8D221CD1F20BE2600184956 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				E8D221D11F20CF9800184956 /* Account and Sign up */,
+				E8D221D21F20CFA600184956 /* Map */,
+				E8D221D31F20CFAD00184956 /* Note */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		E8D221D11F20CF9800184956 /* Account and Sign up */ = {
+			isa = PBXGroup;
+			children = (
+				E8BEAF471F1CA072008CC8D3 /* MRAuthViewController.h */,
+				E8BEAF481F1CA072008CC8D3 /* MRAuthViewController.m */,
+				E8D221CA1F20BE1E00184956 /* MRSignUpViewController.h */,
+				E8D221CB1F20BE1E00184956 /* MRSignUpViewController.m */,
+			);
+			name = "Account and Sign up";
+			sourceTree = "<group>";
+		};
+		E8D221D21F20CFA600184956 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				E8BEAF7C1F1DB91E008CC8D3 /* MRMapViewController.h */,
+				E8BEAF7D1F1DB91E008CC8D3 /* MRMapViewController.m */,
+			);
+			name = Map;
+			sourceTree = "<group>";
+		};
+		E8D221D31F20CFAD00184956 /* Note */ = {
+			isa = PBXGroup;
+			children = (
+				E8D221C41F20659000184956 /* MRNoteViewController.h */,
+				E8D221C51F20659000184956 /* MRNoteViewController.m */,
+			);
+			name = Note;
+			sourceTree = "<group>";
+		};
+		E8D221D41F20CFC700184956 /* Notes */ = {
+			isa = PBXGroup;
+			children = (
+				E8F9BCA31F1EF0A40082564C /* MRNote.h */,
+				E8F9BCA41F1EF0A40082564C /* MRNote.m */,
+				E8F9BCA71F1EF66A0082564C /* MRNoteFactory.h */,
+				E8F9BCA81F1EF66A0082564C /* MRNoteFactory.m */,
+			);
+			name = Notes;
+			sourceTree = "<group>";
+		};
+		E8D221D51F20CFD100184956 /* Firebase */ = {
+			isa = PBXGroup;
+			children = (
+				E8F9BCAA1F1EFA270082564C /* MRDBInteractor.h */,
+				E8F9BCAB1F1EFA270082564C /* MRDBInteractor.m */,
+			);
+			name = Firebase;
+			sourceTree = "<group>";
+		};
+		E8D221D61F20CFD800184956 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				E8F9BCAD1F1F53EE0082564C /* MRNoteAnnotation.h */,
+				E8F9BCAE1F1F53EE0082564C /* MRNoteAnnotation.m */,
+			);
+			name = Map;
+			sourceTree = "<group>";
+		};
+		E8F9BCA61F1EF0BB0082564C /* Data Model */ = {
+			isa = PBXGroup;
+			children = (
+				E8D221D41F20CFC700184956 /* Notes */,
+				E8D221D51F20CFD100184956 /* Firebase */,
+				E8D221D61F20CFD800184956 /* Map */,
+			);
+			name = "Data Model";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -508,9 +607,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				E8BEAF491F1CA072008CC8D3 /* MRAuthViewController.m in Sources */,
+				E8D221C61F20659000184956 /* MRNoteViewController.m in Sources */,
+				E8F9BCAF1F1F53EE0082564C /* MRNoteAnnotation.m in Sources */,
 				E8BEAF7E1F1DB91E008CC8D3 /* MRMapViewController.m in Sources */,
+				E8D221D01F20C58E00184956 /* NSString+MRStringValidation.m in Sources */,
 				E8BEAF461F1CA072008CC8D3 /* AppDelegate.m in Sources */,
+				E8F9BCAC1F1EFA270082564C /* MRDBInteractor.m in Sources */,
+				E8F9BCA91F1EF66A0082564C /* MRNoteFactory.m in Sources */,
+				E8D221CC1F20BE1E00184956 /* MRSignUpViewController.m in Sources */,
 				E8BEAF7A1F1D893D008CC8D3 /* UIAlertController+MRAlerts.m in Sources */,
+				E8F9BCA51F1EF0A40082564C /* MRNote.m in Sources */,
 				E8BEAF431F1CA072008CC8D3 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
