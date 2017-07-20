@@ -33,6 +33,17 @@
     self.emailTextField.text = email;
     NSString *password = [[NSUserDefaults standardUserDefaults] objectForKey:MRUserPassword];
     self.passwordTextField.text = password;
+    
+}
+
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    
+    //if user just signed up an account log the user in
+    if ([[NSUserDefaults standardUserDefaults] boolForKey:MRNewUserSignedUp]) {
+        [[NSUserDefaults standardUserDefaults] setBool:NO forKey:MRNewUserSignedUp];
+        [self loginButtonClicked:nil];
+    }
 }
 
 #pragma mark- IBActions

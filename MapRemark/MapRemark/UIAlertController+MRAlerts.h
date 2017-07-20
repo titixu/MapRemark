@@ -10,6 +10,7 @@
 
 @interface UIAlertController (MRAlerts)
 
+//default alert controller with just title and an "OK" button
 + (instancetype)defaultAlertWithTitle: (NSString *)title message:(NSString *)message;
 
 @end

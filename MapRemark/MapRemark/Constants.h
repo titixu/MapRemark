@@ -11,5 +11,6 @@
 
 #define MRUserEmail @"com.ANXU.MapRemark.email"
 #define MRUserPassword @"com.ANXU.MapRemark.password"
+#define MRNewUserSignedUp @"com.ANXU.MapRemark.NewUserSignedUp"
 
 #endif /* Constants_h */

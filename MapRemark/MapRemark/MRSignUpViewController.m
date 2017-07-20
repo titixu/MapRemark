@@ -48,6 +48,7 @@
                 //TODO: store user passwor is not secure, should store user token instead
                 [[NSUserDefaults standardUserDefaults] setObject:self.emailTextField.text forKey:MRUserEmail];
                 [[NSUserDefaults standardUserDefaults] setObject:self.passwordTextField.text forKey:MRUserPassword];
+                [[NSUserDefaults standardUserDefaults] setBool:YES forKey:MRNewUserSignedUp];
                 [[NSUserDefaults standardUserDefaults] synchronize];
                 //dismiss self after all done
                 

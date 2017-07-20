@@ -29,8 +29,6 @@ static NSString *MRShowNoteViewControllerSegueIdentifier = @"MRShowNoteViewContr
 @property (nonatomic, strong) CLLocationManager *locationManager;
 @property (nonatomic, strong) MRDBInteractor *DBInteractor;
 
-@property (nonatomic, strong) NSMutableArray<MRNote *> *notes;
-
 @property (nonatomic, strong) MRNoteAnnotation *selectedNoteAnnotation;
 
 @end
@@ -39,13 +37,20 @@ static NSString *MRShowNoteViewControllerSegueIdentifier = @"MRShowNoteViewContr
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.title = [FIRAuth auth].currentUser.displayName;
+    
+    //start updating user current location
     [self.locationManager startUpdatingLocation];
+    
+    //show the user current location
     [self showMyLocation];
+    
     //default show user's notes
     [self loadAnnotationsForKeyword:nil];
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    //passing the "note" instance into MRNoteViewController before show it
     if ([segue.identifier isEqualToString:MRShowNoteViewControllerSegueIdentifier]) {
         MKPinAnnotationView *view = sender;
         if ([view isKindOfClass:[MKPinAnnotationView class]]) {
@@ -57,6 +62,7 @@ static NSString *MRShowNoteViewControllerSegueIdentifier = @"MRShowNoteViewContr
 }
 
 #pragma mark- Getters
+//location manager to show current user location
 - (CLLocationManager *)locationManager {
     if (!_locationManager) {
         _locationManager = [[CLLocationManager alloc] init];
@@ -67,6 +73,7 @@ static NSString *MRShowNoteViewControllerSegueIdentifier = @"MRShowNoteViewContr
     return _locationManager;
 }
 
+//This interactor is "calling" the APIs and update the data base at backend
 - (MRDBInteractor *)DBInteractor {
     if (!_DBInteractor) {
         _DBInteractor = [[MRDBInteractor alloc] init];
@@ -74,19 +81,13 @@ static NSString *MRShowNoteViewControllerSegueIdentifier = @"MRShowNoteViewContr
     return _DBInteractor;
 }
 
-- (NSMutableArray<MRNote *> *)notes {
-    if (!_notes) {
-        _notes = [NSMutableArray array];
-    }
-    return _notes;
-}
-
 #pragma mark- IBActions
-
+//zoom to move to current user location
 - (IBAction)myLocationButtonClicked:(UIButton *)sender {
     [self showMyLocation];
 }
 
+//The only way for user to add an pin to the map view
 - (IBAction)longPress:(UILongPressGestureRecognizer *)sender {
     
     if (sender.state == UIGestureRecognizerStateRecognized) {

@@ -34,7 +34,7 @@
     self.noteTextView.text = self.note.body;
     self.privacyControl.selectedSegmentIndex = self.note.pricacy;
     
-    //UI bugs, somehow, it ignores the IB config, and it is set to not editable
+    //UI bugs, somehow, it ignores the IB config, and it got set to not editable, re enable it.
     self.noteTextView.editable = YES;
     
     if(![self isNoteBelongToUser]) {
@@ -44,6 +44,7 @@
 
 #pragma mark- IBActions
 
+//Delete the note from the server, also remove the pin
 - (IBAction)deleteButtonClicked:(UIButton *)sender {
     [self disableUI];
     [self.interactor removeNote:self.note completionBlock:^(NSError * _Nullable error) {
@@ -58,6 +59,7 @@
     }];
 }
 
+//save and update the note in the backend
 - (IBAction)saveButtonClicked:(UIButton *)sender {
     self.note.body = self.noteTextView.text;
     self.note.pricacy = self.privacyControl.selectedSegmentIndex;
@@ -76,6 +78,7 @@
 
 
 #pragma mark- Private methods
+//Only notes belong to user are able to edit the note
 - (BOOL)isNoteBelongToUser {
     FIRUser *user = [FIRAuth auth].currentUser;
     return ([user.uid isEqualToString:self.note.userid]);
